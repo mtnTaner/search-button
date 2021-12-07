@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="search" id="kutu">
+        <input type="text" name="" id="search_btn" onkeyup="taner();"placeholder=" ARA">
+        <a href="#">
+            <i class="fa fa-search"></i>
+        </a>
+    
+
+        
+    </div>
+    <script>
+      
+            function taner(){
+                var control = document.getElementById("search_btn").value;
+                console.log(control);
+        if(control.length   != 0 ){
+            document.getElementById("search_btn").style.width ="260px",padding= "0 15px";
+            document.getElementById("kutu").style.border="solid 3px white";
+        }else{
+            document.getElementById("search_btn").style.width ="60px",padding= "0";
+            document.getElementById("kutu").style.border="none";
+        }
+            }
+           
+     
+    </script>
+
+
+</body>
+</html>
